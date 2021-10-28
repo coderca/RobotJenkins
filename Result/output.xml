@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20211028 19:27:54.416" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="C:\Users\Moolya\robotnew\Tests">
+<suite id="s1-s1" name="Testcase" source="C:\Users\Moolya\robotnew\Tests\testcase.robot">
+<test id="s1-s1-t1" name="Observe user is able to test sanity flow">
+<kw name="Given User Launch browser for Indian store">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.indiabookstore.net/</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211028 19:27:54.739" level="INFO">Opening browser 'gc' to base url 'https://www.indiabookstore.net/'.</msg>
+<status status="PASS" starttime="20211028 19:27:54.739" endtime="20211028 19:27:58.120"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211028 19:27:58.120" endtime="20211028 19:27:58.262"/>
+</kw>
+<status status="PASS" starttime="20211028 19:27:54.738" endtime="20211028 19:27:58.265"/>
+</kw>
+<kw name="Then User clicks on Searchbox and search for Mathematics book">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=searchBox</arg>
+<arg>Mathematics</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211028 19:27:58.269" level="INFO">Typing text 'Mathematics' into text field 'id=searchBox'.</msg>
+<status status="PASS" starttime="20211028 19:27:58.268" endtime="20211028 19:27:58.387"/>
+</kw>
+<status status="PASS" starttime="20211028 19:27:58.267" endtime="20211028 19:27:58.387"/>
+</kw>
+<kw name="And User clicks on Search Icon">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=searchButtonInline</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211028 19:27:58.390" level="INFO">Clicking element 'id=searchButtonInline'.</msg>
+<status status="PASS" starttime="20211028 19:27:58.389" endtime="20211028 19:27:58.766"/>
+</kw>
+<status status="PASS" starttime="20211028 19:27:58.388" endtime="20211028 19:27:58.766"/>
+</kw>
+<tag>regression</tag>
+<tag>sanity</tag>
+<status status="PASS" starttime="20211028 19:27:54.728" endtime="20211028 19:27:58.767"/>
+</test>
+<status status="PASS" starttime="20211028 19:27:54.445" endtime="20211028 19:27:58.772"/>
+</suite>
+<status status="PASS" starttime="20211028 19:27:54.418" endtime="20211028 19:27:58.778"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">regression</stat>
+<stat pass="1" fail="0" skip="0">sanity</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Testcase">Tests.Testcase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
